@@ -1,0 +1,58 @@
+<html>
+  <head>
+    <style>
+      .container {
+        width: 1000;
+        height: 1200px;
+        position: relative;
+        border: 1px solid black;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+      .wrapper {
+        width: initial;
+        height: initial;
+        display: block;
+        position: absolute;
+        overflow: hidden;
+        box-sizing: border-box;
+        border: 1px dashed red;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+      }
+
+      .image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+        box-sizing: border-box;
+        padding: 0;
+        border: none;
+        margin: auto;
+
+        display: block;
+        width: 0px;
+        height: 0px;
+        min-height: 100%;
+        max-height: 100%;
+        min-width: 100%;
+        max-width: 100%;
+        object-fit: contain;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>layout === 'fill'</h1>
+    <div class="container">
+      <span class="wrapper">
+        <img class="image" src="./sample_image.jpeg" />
+      </span>
+    </div>
+  </body>
+</html>
